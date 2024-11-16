@@ -1,0 +1,59 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    flex-flow: nowrap;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header div{
+    cursor: pointer;
+    padding: 1rem 0.5rem 1rem;
+    border-radius: 100px;
+    background-color: var(--text-color);
+}
+
+header div i{
+    color: var(--primary-color);
+}
+
+header div:hover{
+    background-color: var(--border-color);
+    i{
+        color: var(--title-color);
+    }
+}
+
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a:hover{
+    color: var(--border-color);
+}
+
+.sun_icon{
+    cursor: pointer;
+    border-radius: 100px;
+    padding: 0.9rem 1rem 0.9rem;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.sun_icon:hover{
+    background-color: var(--border-color);
+    color: var(--title-color);
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #1f326f;
+    --primary-bg-color: #ca6702;
+    --secondary-bg-color: #5a189a;
+    --border-color: #d9d0f9;
+    --text-color: #edf2f4;
+    --title-color: #a100f2;
+}
