@@ -1,16 +1,21 @@
 body{
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     background-color: var(--primary-color);
 }
 
+/* Header */
 header{
+    background-color: var(--primary-color);
+    position: fixed;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     flex-flow: nowrap;
     border-bottom: 1px solid var(--border-color);
 }
@@ -27,10 +32,7 @@ header div i{
 }
 
 header div:hover{
-    background-color: var(--border-color);
-    i{
-        color: var(--title-color);
-    }
+    background-color: var(--title-color);
 }
 
 header a{
@@ -38,22 +40,203 @@ header a{
     color: var(--text-color);
     font-size: x-large;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header a:hover{
-    color: var(--border-color);
+    color: var(--title-color);
 }
 
 .sun_icon{
+    font-size: x-large;
     cursor: pointer;
     border-radius: 100px;
-    padding: 0.9rem 1rem 0.9rem;
+    padding: 0.5rem 0.65rem 0.5rem;
     background-color: var(--text-color);
     color: var(--primary-color);
 }
 
 .sun_icon:hover{
-    background-color: var(--border-color);
+    background-color: var(--title-color);
+}
+
+/* Section 1 */
+.section1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5.5rem 10rem 0.5rem;
+}
+
+.section1 img{
+    width: 30%;
+}
+
+.section1 .text{
+    width: 55%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+.section1 .text h2{
+    font-family: serif;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.section1 .text h3{
+    color: var(--secondary-bg-color);
+}
+
+.section1 .text .links{
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section1 .text .links i{
+    color: var(--primary-color);
+    padding: 0.75rem;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.section1 .text .links i:hover{
+    background-color: var(--title-color);
+}
+
+/* Section 2 */
+.section2{
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem;
+    gap: 4rem;
+}
+
+.section2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section2 ul li{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 ul li img{
+    border-radius: 25%;
+    padding: 0.75rem;
+    background-color: var(--text-color);
+    width: 25%;
+}
+
+.section2 ul li span{
+    font-weight: bold;
+}
+
+.section2 h4{
+    width: 50%;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--primary-color);
+}
+
+
+/* Section 3 */
+.section3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5.5rem 10rem 0.5rem;
+}
+
+.section3 img{
+    width: 20%;
+}
+
+.section3 .text{
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+.section3 .text h2{
+    font-family: serif;
+    font-style: italic;
     color: var(--title-color);
+}
+
+.section3 .text h3{
+    font-size: larger;
+    color: var(--text-color);
+}
+
+.section3 .text .links button{
+    background: transparent;
+    cursor: pointer;
+    all: unset;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: 3px solid var(--title-color);
+    color: var(--title-color);
+    font-size: larger;
+    font-weight: 800;
+}
+
+/* Navbar */
+nav{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+}
+
+nav ul{
+    padding: 0.5rem ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li:hover{
+    a, a i{
+        color: var(--title-color);
+    }
+}
+
+nav ul li a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav ul li a i{
+    font-size: x-large;
 }
