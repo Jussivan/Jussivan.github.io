@@ -4,13 +4,25 @@
     box-sizing: border-box;
     vertical-align: baseline;
     list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    transition: ease-out 0.5s;
 }
 
-:root {
-    --primary-color: #1f326f;
-    --primary-bg-color: #ca6702;
-    --secondary-bg-color: #5a189a;
-    --border-color: #d9d0f9;
+:root, :root[data-theme="dark"] {
+    --primary-color: #0c1221;
+    --primary-bg-color: #003c8a;
+    --secondary-bg-color: #78beff;
+    --border-color: #c7e3fb;
     --text-color: #edf2f4;
-    --title-color: #a100f2;
+    --title-color: #5397cb;
+}
+
+:root, :root[data-theme="light"] {
+    --primary-color: #e4f6ff;
+    --primary-bg-color: #1b399c;
+    --secondary-bg-color: #183b9a;
+    --border-color: #1b6caa;
+    --text-color: #1595f6;
+    --title-color: #2e6edd;
 }
