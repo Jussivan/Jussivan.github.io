@@ -117,7 +117,7 @@ header a:hover{
     color: var(--text-color);
     background-color: var(--primary-bg-color);
     text-align: center;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +165,7 @@ header a:hover{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 5.5rem 10rem 0.5rem;
+    padding: 5.5rem 10rem 5.5rem;
 }
 
 .section3 img{
@@ -203,6 +203,100 @@ header a:hover{
     color: var(--title-color);
     font-size: larger;
     font-weight: 800;
+}
+
+.section3 .text .links button:hover{
+    cursor: pointer;
+    border: 3px solid var(--secondary-bg-color);
+    color: var(--secondary-bg-color);
+}
+
+/* Section 4 */
+.section4{
+    background-color: rgba(27, 27, 27, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5.5rem 10rem 5.5rem;
+    gap: 2.5rem;
+}
+
+.section4 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secondary-bg-color);
+    font-style: italic;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.section4 .project_card{
+    border-radius: 1rem;
+    padding: 2.5rem;
+    background-color: var(--project-bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.section4 .project_card .project_img{
+    border: 3px solid var(--border-color);
+    width: 50%;
+}
+
+.section4 .project_card .project_info{
+    color: var(--project-item-color);
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.section4 .project_info h2{
+    color: var(--title-color);
+}
+
+.section4 .project_info a{
+    text-decoration: none;
+    all: unset;
+    background-color: var(--title-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 25px;
+    color: var(--project-item-color);
+    font-size: larger;
+    font-weight: 800;
+}
+
+.section4 .project_info a:hover{
+    cursor: pointer;
+    background-color: var(--border-color);
+    color: var(--primary-bg-color);
+}
+
+.section4 .project_info ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section4 .project_info ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section4 .project_info li img{
+    border-radius: 25%;
+    padding: 0.5rem;
+    width: 25%;
+    background-color: var(--project-item-color);
 }
 
 /* Navbar */
