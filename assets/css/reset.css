@@ -11,9 +11,9 @@
 
 :root, :root[data-theme="dark"] {
     --primary-color: #0c1221;
-    --primary-bg-color: #003c8a;
-    --secondary-bg-color: #78beff;
-    --border-color: #c7e3fb;
+    --primary-bg-color: #0f4070;
+    --secondary-bg-color: #62a5f8;
+    --border-color: #012db1;
     --text-color: #edf2f4;
     --title-color: #3d8fcd;
     --project-bg-color: #272727;
@@ -22,9 +22,9 @@
 
 :root, :root[data-theme="light"] {
     --primary-color: #e4f6ff;
-    --primary-bg-color: #133b74;
-    --secondary-bg-color: #183b9a;
-    --border-color: #3f85ff;
+    --primary-bg-color: #0f3c7c;
+    --secondary-bg-color: #1b4c95;
+    --border-color: #4498ff;
     --text-color: #1595f6;
     --title-color: #2e6edd;
     --project-bg-color: #272727;
